@@ -4,6 +4,7 @@
   "description": "AdminApp",
   "main": "bin/www",
   "scripts": {
+    "start": "node ./bin/www",
     "test": "mocha --timeout 5000 ./tests/*-test.js"
   },
   "author": "Daniel Santana",
