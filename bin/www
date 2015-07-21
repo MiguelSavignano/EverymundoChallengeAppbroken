@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+require('../server-app.js').listen(process.env.APP_PORT, function(){
+  console.log('App running on port %s', process.env.APP_PORT);
+})
