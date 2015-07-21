@@ -1,0 +1,24 @@
+{
+  "name": "admin-app",
+  "version": "0.0.1",
+  "description": "AdminApp",
+  "main": "bin/www",
+  "scripts": {
+    "test": "mocha --timeout 5000 ./tests/*-test.js"
+  },
+  "author": "Daniel Santana",
+  "license": "Copyright",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "dotenv": "^1.2.0",
+    "express": "^4.13.1",
+    "mongoose": "^4.0.8",
+    "morgan": "^1.6.1",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5",
+    "supertest": "^1.0.1"
+  }
+}
