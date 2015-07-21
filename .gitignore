@@ -1,0 +1,3 @@
+.env
+tests/.env-test
+node_modules
