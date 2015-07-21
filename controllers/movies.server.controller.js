@@ -22,8 +22,8 @@ var moviesCtrl = {
   all: function(req, res) {
 
     Movies
-    .find()
-    .limit(10)
+    .find({}, {title:1})
+    .limit(5)
     .exec(function(err, results){
       if(err) {
         return res.status(500).json({err: true, msg: err});
