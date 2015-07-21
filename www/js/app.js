@@ -1,7 +1,3 @@
-/**
- * Created by Sandeep on 01/06/14.
- */
-
 angular.module('movieApp',['ui.router','ngResource','movieApp.controllers','movieApp.services']);
 
 angular.module('movieApp').config(function($stateProvider,$httpProvider){
