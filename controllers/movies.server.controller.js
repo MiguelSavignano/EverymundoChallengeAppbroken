@@ -47,11 +47,17 @@ var moviesCtrl = {
   },
   update: function(req, res) {
     var query       = {_id: ObjectId(req.params.id)};
-    var movieFields = req.body;
     var options     = {};
+    var post        = req.body || {};
+    var movieFields = {
+      title:       post.title,
+      releaseYear: post.releaseYear,
+      director:    post.director,
+      genre:       post.genre
+    };
 
     Movies
-    .update(query, {$set:movieFields}, options, function(err, numAffected){
+    .update(query, movieFields, options, function(err, numAffected){
       if(err)
         return res.status(500).json({error: true, msg: err, query: query});
 
