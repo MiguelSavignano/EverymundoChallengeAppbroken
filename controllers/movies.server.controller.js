@@ -6,7 +6,7 @@ var moviesCtrl = {
     var query = {_id: ObjectId(req.params.id)};
 
     Movies
-    .findOne(query)
+    .findOne(query, {title:1, genre:1, releaseYear: 1})
     .exec(function(err, movie){
       if(err) {
         return res.status(500).json({err: true, msg: err});
