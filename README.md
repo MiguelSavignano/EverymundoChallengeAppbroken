@@ -2,7 +2,7 @@
 
 ### Preparing the environment
 
-1. Clone this repo with depth=1
+1. Clone this repo with **--depth=1** http://gitlab.everymundo.org:8080/daniel/moviesappbroken.git
 2. Enter the directory and install the npm modules
 3. Copy the file ```tests/.env-test-dist``` to ```tests/.env```
 4. Run ```npm test```
@@ -66,4 +66,3 @@
     * Identify the problem.
     * Fix it.
     * Commit the changes
-
