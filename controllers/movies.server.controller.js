@@ -6,7 +6,7 @@ var moviesCtrl = {
     var query = {_id: ObjectId(req.params.id)};
 
     Movies
-    .findOne(query, {title:1, genre:1, releaseYear: 1})
+    .findOne(query, {title:1, genre:1, director: 1, releaseYear: 1})
     .exec(function(err, movie){
       if(err) {
         return res.status(500).json({err: true, msg: err});
@@ -23,7 +23,7 @@ var moviesCtrl = {
 
     Movies
     .find({}, {title:1})
-    .limit(5)
+    .limit(100)
     .exec(function(err, results){
       if(err) {
         return res.status(500).json({err: true, msg: err});
