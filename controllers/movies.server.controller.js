@@ -37,8 +37,10 @@ var moviesCtrl = {
     });
   },
   create: function(req, res) {
+
     Movies
     .create(req.body, function(err, movie){
+      console.log(req.body);
       if(err)
         return res.status(500).json({error: true, msg: err});
 
