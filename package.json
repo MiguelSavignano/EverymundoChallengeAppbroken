@@ -15,6 +15,7 @@
     "express": "^4.13.1",
     "mongoose": "^4.0.8",
     "morgan": "^1.6.1",
+    "pryjs": "^0.1.1",
     "swig": "^1.4.2"
   },
   "devDependencies": {

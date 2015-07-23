@@ -16,7 +16,7 @@ router.post('/movies', jsonParser, moviesCtrl.create);
 router.put('/movies/:id', moviesCtrl.update);
 
 /* DELETE removes a Movie document. */
-router.delete('/movies/:id', moviesCtrl.one);
+router.delete('/movies/:id', moviesCtrl.delete);
 
 
 module.exports = router;

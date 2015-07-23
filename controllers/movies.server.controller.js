@@ -70,7 +70,7 @@ var moviesCtrl = {
     });
   },
   delete: function(req, res) {
-    var query  = {_id: ObjectId(req.params.id)};
+    var query = {_id: ObjectId(req.params.id)};
     Movies
     .remove(query, function(err, response){
       if(err)
