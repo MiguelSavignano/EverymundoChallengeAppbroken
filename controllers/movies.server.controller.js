@@ -23,7 +23,6 @@ var moviesCtrl = {
 
     Movies
     .find({}, {title:1})
-    .limit(100)
     .exec(function(err, results){
       if(err) {
         return res.status(500).json({err: true, msg: err});
