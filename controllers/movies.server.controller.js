@@ -48,9 +48,12 @@ var moviesCtrl = {
     });
   },
   update: function(req, res) {
+    console.log(req.params);
+    console.log(req.body);
     var query       = {_id: ObjectId(req.params.id)};
     var options     = {};
     var post        = req.body || {};
+    
     var movieFields = {
       title:       post.title,
       releaseYear: post.releaseYear,

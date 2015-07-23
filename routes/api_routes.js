@@ -13,7 +13,7 @@ router.get('/movies', moviesCtrl.all);
 router.post('/movies', jsonParser, moviesCtrl.create);
 
 /* put updates Movie document */
-router.put('/movies/:id', moviesCtrl.update);
+router.put('/movies/:id', jsonParser, moviesCtrl.update);
 
 /* DELETE removes a Movie document. */
 router.delete('/movies/:id', moviesCtrl.delete);
